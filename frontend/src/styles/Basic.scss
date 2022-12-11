@@ -1,0 +1,107 @@
+@import './colors';
+@import './buttons';
+
+
+.basic-section {
+    background-color: $main-color;
+    width: 100%;
+    height: 80vh;
+    padding: 2rem;
+    margin-top: 2rem;
+
+    .row {  
+        .orange:hover {
+            color: orange;
+            cursor: pointer;
+        }
+        
+    }
+    .column {
+        font-size: 20px;
+        float: left;
+        width: 23.33%;
+        padding: 10px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    .allcart {
+        position: relative;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        // overflow: hidden;
+        gap: 2rem;
+    
+    .cart {
+        height: 300px;
+        width: 30vw;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }   
+           
+    }
+}}
+@media only screen and (max-width: 550px) {
+    
+    
+    .basic-section{
+        .column {
+            font-size: 15px;
+            width: 100%;
+            
+        }
+        .allcart {
+            position: relative;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            // overflow: hidden;
+            gap: 2rem;
+        
+            .cart {
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }        
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .basic-section{
+        .column {
+            width: 100%;
+            
+        }
+        .allcart {
+            position: relative;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            // overflow: hidden;
+            gap: 2rem;
+        
+            .cart {
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }        
+            }
+        }
+    }
+}
